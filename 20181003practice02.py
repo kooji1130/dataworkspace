@@ -66,5 +66,8 @@ while True:
     elif con=='n':
         break
 pay = list(map(lambda a,b:((a*b)/20), Total_code,Total_time) )
-print(pay )
+print("="*25)
+print("姓名","\t","薪水")
+for i in range(len(Total_mem)):
+  print(Total_mem[i],"\t",pay[i])
 
