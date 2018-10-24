@@ -48,26 +48,5 @@ for data in student:
     if tempbmi>=27:
         print(data[0],tempbmi)
     
-----------------------------------------------------------------------------
-Total_mem=[]
-Total_code=[]
-Total_time=[]
 
-while True:
-    mem,code,time= input("請使用者輸入員工姓名,每小時打字字數和每日工作時數,請用空格隔開\n").split()
-    code=int(code)
-    time=int(time)
-    Total_mem.append(mem)
-    Total_code.append(code)
-    Total_time.append(time)
-    con=input("請問還需不需要輸入(y/n)")
-    if con=='y':
-        continue
-    elif con=='n':
-        break
-pay = list(map(lambda a,b:((a*b)/20), Total_code,Total_time) )
-print("="*25)
-print("姓名","\t","薪水")
-for i in range(len(Total_mem)):
-  print(Total_mem[i],"\t",pay[i])
 
